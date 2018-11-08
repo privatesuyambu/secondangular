@@ -1,11 +1,18 @@
 pipeline {
-    agent { docker { image 'node' } }
+
+    agent any
+
+    environment {
+        PATH='C:\Program Files\nodejs'
+	}
+
     stages {
-        stage('build') {
-            steps {
-                echo 'Hi world'
-                sh 'npm --version'
-            }
-        }
+
+       stage('NPM Setup') {
+          steps {
+			echo "Do buildsjksd"
+             		sh 'npm install'
+         	}
+       	}
     }
 }
