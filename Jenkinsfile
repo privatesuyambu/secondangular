@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Example'){
             steps{
-                echo "running hhhu"
+                echo "running from jenkins file"
                 bat 'node -v'
             }
     }
