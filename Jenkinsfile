@@ -7,6 +7,7 @@ pipeline{
                 echo "running from jenkins file"
                 bat 'node -v'
                 bat 'npm install'
+                bat 'ionic build'
             }
     }
 }
