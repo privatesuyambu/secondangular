@@ -1,18 +1,12 @@
-pipeline {
-
+pipeline{
     agent any
-
-    environment {
-        PATH='C:\Program Files\nodejs'
-	}
-
+    tools {nodejs "node"}
     stages {
-
-       stage('NPM Setup') {
-          steps {
-			echo "Do buildsjksd"
-             		sh 'npm install'
-         	}
-       	}
+        stage('Example'){
+            steps{
+                echo "running hhhu"
+                bat 'node -v'
+            }
     }
+}
 }
