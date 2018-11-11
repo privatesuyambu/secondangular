@@ -10,5 +10,9 @@ pipeline{
                 bat 'npm run build'
             }
     }
+
+    stage('ionic'){
+        bat 'íonic build'
+    }
 }
 }
