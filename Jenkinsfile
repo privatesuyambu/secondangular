@@ -12,7 +12,9 @@ pipeline{
     }
 
     stage('ionic'){
+        steps{
         bat 'íonic build'
+        }
     }
-}
+}   
 }
