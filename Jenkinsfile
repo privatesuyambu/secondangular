@@ -6,7 +6,7 @@ pipeline{
             steps{
                 echo "running from jenkins file"
                 bat 'node -v'               
-                bat 'ionic build'
+                bat 'npm run androidbuild'
             }
     }
 
