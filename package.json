@@ -9,7 +9,7 @@
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
-    "androidbuild": "ionic-app-scripts cordova build android"
+    "androidbuild": "ionic cordova build android"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
