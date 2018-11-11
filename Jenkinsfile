@@ -5,9 +5,8 @@ pipeline{
         stage('Example'){
             steps{
                 echo "running from jenkins file"
-                bat 'node -v'
-                bat 'npm install'
-                bat 'npm run build'
+                bat 'node -v'               
+                bat 'ionic build'
             }
     }
 
