@@ -1,11 +1,14 @@
 pipeline{
     agent any  
+    environment{
+        PATH='C:\Users\Stephan\AppData\Roaming\npm'
+    }
     stages {
         stage('Build Clinicalaide'){
             steps{
                 echo "Building suya3"             
                 bat 'node -v'
-                bat 'npm run ionic-app-scripts build'
+                bat 'ionic build'
             }
     }
 
