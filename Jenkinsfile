@@ -6,7 +6,8 @@ pipeline{
             steps{
                 echo "running from jenkins file"
                 bat 'node -v'               
-                bat 'npm run androidbuild'
+                bat 'npm install'
+                bat 'npm run build'
             }
     }
 
