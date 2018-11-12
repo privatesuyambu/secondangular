@@ -3,9 +3,9 @@ pipeline{
     stages {
         stage('Build Clinicalaide'){
             steps{
-                echo "Building suya"             
+                echo "Building suya2"             
                 bat 'node -v'
-                bat 'ionic -v'
+                bat 'npm run ionic -v'
             }
     }
 
