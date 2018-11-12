@@ -1,7 +1,7 @@
 pipeline{
     agent any  
     environment{
-        PATH='C:\Users\Stephan\AppData\Roaming\npm'
+        PATH='/Users/Stephan/AppData/Roaming/npm'
     }
     stages {
         stage('Build Clinicalaide'){
