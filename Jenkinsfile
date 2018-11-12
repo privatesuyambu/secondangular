@@ -4,7 +4,7 @@ pipeline{
         stage('Build Clinicalaide'){
             steps{
                 echo "Building clincial aide applciation"             
-                bat 'ionic build'               
+                bat 'node -v'               
             }
     }
 
