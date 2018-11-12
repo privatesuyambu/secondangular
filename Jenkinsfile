@@ -2,16 +2,19 @@ pipeline{
     agent any
     tools {nodejs "node"}
     stages {
-        stage('Example'){
+        stage('Build Clinicalaide'){
             steps{
-                echo "running from jenkins file"
-                bat 'node -v'               
+                echo "Building clincial aide applciation"             
                 bat 'npm install'
                 bat 'npm run build'
-                bat 'ionic cordova build android'
             }
     }
 
-   
-}   
+       stage('Test Clinicalaide - Karma test cases'){
+            steps{     
+                echo "Testing clincial aide applciation"                                            
+                bat 'npm run test'
+            }
+    }
+}
 }
