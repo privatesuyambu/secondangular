@@ -5,7 +5,7 @@ pipeline{
             steps{
                 echo "Building suya3"             
                 bat 'node -v'
-                bat 'npm run ionic build'
+                bat 'npm run ionic-app-scripts build'
             }
     }
 
