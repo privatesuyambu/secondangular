@@ -1,6 +1,5 @@
 pipeline{
-    agent any
-    tools {nodejs "node"}
+    agent any  
     stages {
         stage('Build Clinicalaide'){
             steps{
