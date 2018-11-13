@@ -1,8 +1,5 @@
 pipeline{
-    agent any  
-    environment{
-        PATH='/Users/wasamuel/AppData/Roaming/npm'
-    }
+    agent any      
     stages {
         stage('Build Clinicalaide'){
             steps{
